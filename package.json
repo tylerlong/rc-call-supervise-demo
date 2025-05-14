@@ -7,7 +7,7 @@
     "@rc-ex/core": "^1.6.17",
     "@types/node": "^22.15.18",
     "dotenv-override-true": "^6.2.2",
-    "ringcentral-softphone": "^1.1.8",
+    "ringcentral-softphone": "^1.1.9",
     "tsx": "^4.19.4",
     "yarn-upgrade-all": "^0.7.5"
   },

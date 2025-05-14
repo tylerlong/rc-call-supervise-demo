@@ -473,10 +473,10 @@ resolve-pkg-maps@^1.0.0:
   resolved "https://registry.yarnpkg.com/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz#616b3dc2c57056b5588c31cdf4b3d64db133720f"
   integrity sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
 
-ringcentral-softphone@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/ringcentral-softphone/-/ringcentral-softphone-1.1.8.tgz#7798bbd603457568d4c9662371013454058b5809"
-  integrity sha512-MqkvIQhBVtmr6p1dFtvvvizPCNoqbes0jTUaKa6naXtP0dCzcUlfrNcNekQHv1e816n8EUrNoYna3v0+/NXZHg==
+ringcentral-softphone@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/ringcentral-softphone/-/ringcentral-softphone-1.1.9.tgz#4be751c957de5f689cca035690af5425778acb61"
+  integrity sha512-PAXWpnBnPk+kXeaqe5fzEeTetfOjfYSq++wHxTjoLNUSh6Txej/vaa3389rpwNXTmyQ/qmTh1G7C2cH6+WT33Q==
   dependencies:
     "@evan/opus" "^1.0.3"
     wait-for-async "^0.7.13"

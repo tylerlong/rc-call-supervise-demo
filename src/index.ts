@@ -39,11 +39,33 @@ const main = async () => {
     });
   });
 
-  // init call supervision
+  // generate an access token
   await rc.authorize({
     jwt: process.env.RINGCENTRAL_JWT_TOKEN!,
   });
-  console.log(rc.token.access_token);
+
+  // init the call supervision
+  const callSessionId = process.env.CALL_SESSION_ID!;
+  const partyId1 = `p-${callSessionId.substring(2)}-1`;
+  const partyId2 = `p-${callSessionId.substring(2)}-2`;
+  await rc.restapi().account().telephony().sessions(callSessionId).parties(
+    partyId1,
+  )
+    .supervise().post({
+      mode: "Listen",
+      supervisorDeviceId: process.env.SIP_INFO_AUTHORIZATION_ID!,
+      agentExtensionId: process.env.AGENT_EXTENSION_ID!,
+    });
+  await rc.restapi().account().telephony().sessions(callSessionId).parties(
+    partyId2,
+  )
+    .supervise().post({
+      mode: "Listen",
+      supervisorDeviceId: process.env.SIP_INFO_AUTHORIZATION_ID!,
+      agentExtensionId: process.env.AGENT_EXTENSION_ID!,
+    });
+
+  // we don't need the access token anymore
   await rc.revoke();
 };
 main();
