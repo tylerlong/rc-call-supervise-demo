@@ -25,7 +25,7 @@ AGENT_EXTENSION_ID=
 CALL_SESSION_ID=
 ```
 
-This part is for softphone SDK, please refer to
+This following part is for softphone SDK, please refer to
 https://github.com/ringcentral/ringcentral-softphone-ts:
 
 ```
@@ -36,7 +36,7 @@ SIP_INFO_PASSWORD=
 SIP_INFO_AUTHORIZATION_ID=
 ```
 
-This part is for RingCentral Restful API, please refer to
+This following part is for RingCentral Restful API, please refer to
 https://developers.ringcentral.com/:
 
 ```
